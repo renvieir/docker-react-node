@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Item.css';
+import {Button, CircleButton} from './Buttons';
 
 function Item(props) {
   const {item} = props;
@@ -20,11 +21,11 @@ function Item(props) {
       <p className="item--price">{item.price}</p>
       <p className="item--promo">{item.promo}</p>
       <p className="item--link">View details</p>
-      <div className="input-group">
-        <button className="button--circle button--image image--minus" onClick={() => updateCounter(-1)} disabled={counter < 1}></button>
+      <div className="button-group">
+        <CircleButton handleClick={() => updateCounter(-1)} minus disabled={counter < 1} />
         <p className="counter">{counter}</p>
-        <button className="button--circle button--image image--plus" onClick={() => updateCounter(+1)}></button>
-        <button className="button--primary" onClick={() => console.log("add "+counter)} disabled={counter < 1}>add</button>
+        <CircleButton handleClick={() => updateCounter(+1)} plus />
+        <Button handleClick={() => console.log("add "+counter)} disabled={counter < 1}>add</Button>
       </div>
     </li>
   );
