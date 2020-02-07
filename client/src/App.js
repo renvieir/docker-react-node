@@ -1,26 +1,17 @@
 import React from 'react';
 import './App.css';
-
-function Container(props) {
-  return (<div className="container">{props.children}</div>);
-}
-
-function Item() {
-  return (
-    <>
-      <img width="80" height="80" src="https://images-na.ssl-images-amazon.com/images/I/41nE19Ab-KL.png" />
-      <p>Say hello to nyan cat</p>
-    </>
-  );
-}
+import Item from './Item';
 
 function App() {
   return (
     <div id="app">
       <main>
-        <Container>
-          <Item />
-        </Container>
+        <div className="container">
+          <Item imgSrc="https://qa-m1-dr.abi-sandbox.net/media/catalog/product/-/R/-R002151.png" />
+          <Item imgSrc="https://qa-m1-dr.abi-sandbox.net/media/catalog/product/-/R/-R002151.png" />
+          <Item imgSrc="https://qa-m1-dr.abi-sandbox.net/media/catalog/product/-/R/-R002151.png" />
+          <Item imgSrc="https://qa-m1-dr.abi-sandbox.net/media/catalog/product/-/R/-R002151.png" />
+        </div>
       </main>
     </div>
   );

@@ -1,0 +1,88 @@
+p {
+  margin: 0;
+}
+
+.item--container {
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  margin: 4px;
+  box-shadow: 0.2px 0.2px #f2f2f2;
+  width: 200px;
+}
+
+.item--image {
+  margin: auto;
+  display: block;
+  width: 80px;
+  height: auto;
+}
+
+.input-group {
+  margin-top: 16px;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 32px 32px 32px auto;
+}
+
+.item--title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.item--description,
+.item--price {
+  font-size: 14px;
+}
+
+.item--stock,
+a {
+  font-size: 12px;
+}
+
+a {
+  color: royalblue;
+}
+
+.item--price {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.item--description {
+  color: grey;
+}
+
+.item--stock {
+  color: #047c04;
+  line-height: 18px;
+}
+
+.item--container input[type=button] {
+  border-radius: 50%;
+  border: 1px solid royalblue;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.item--container input[type=text] {
+  border-radius: 4px;
+  background-color: white;
+  border-style: none;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.item--container input[type=submit] {
+  border-radius: 4px;
+  border: 1px solid royalblue;
+  background-color: white;
+  width: 72px;
+  height: 24px;
+  text-transform: uppercase;
+  color: royalblue;
+}
