@@ -1,3 +1,3 @@
-import Button from './Button';
-import CircleButton from './CircleButton';
+import Button from './Button/Button';
+import CircleButton from './CircleButton/CircleButton';
 export {Button, CircleButton};

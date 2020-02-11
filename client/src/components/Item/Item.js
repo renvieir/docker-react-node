@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Item.css';
-import {Button, CircleButton} from './Buttons';
+import {Button, CircleButton} from '../Buttons';
 
 function Item(props) {
   const {item} = props;
