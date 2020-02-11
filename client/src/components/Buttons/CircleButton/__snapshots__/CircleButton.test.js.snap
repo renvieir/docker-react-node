@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircleButton should render disabled 1`] = `
+<button
+  className="button--circle button--image image--plus"
+  disabled={true}
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`CircleButton should render minus icon 1`] = `
+<button
+  className="button--circle button--image image--minus"
+  disabled={false}
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`CircleButton should render plus icon as default 1`] = `
+<button
+  className="button--circle button--image image--plus"
+  disabled={false}
+  onClick={[MockFunction]}
+/>
+`;
